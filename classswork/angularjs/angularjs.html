@@ -1,0 +1,27 @@
+<html>
+<script src="angular.min.js"></script>
+<body>
+<!--<div ng-app>
+<p> name: <input type="text" ng-model="name"></p> <p> nname: <input type="text" ng-model="nname"></p>
+        <h1> Hello {{name}} {{nname}}</h1>
+        <p>My angular js expression: {{5+10}}</p>
+</div>
+<div ng-app ng-init="Quantity=10; price=5">
+        Quantity: <input type="number" ng-model="Quntity">
+        Costs: <input type="number" ng-model="price">
+        Total in Naira:{{Quantity*price}}
+</div>-->
+<div ng-app ng-init="names=[
+{name: 'John', country:'Norway'}
+{name: 'Joe', country:'Nigeria'}
+{name: 'James', country:'Niger'}
+{name: 'Josh', country:'Asia'}]">
+<ul>
+    <li ng-repeat="x in name">
+        {{x.name+','+x.country}}
+    </li>
+</ul>
+
+</div>
+</body>
+</html>
